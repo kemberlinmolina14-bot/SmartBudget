@@ -1,0 +1,33 @@
+.sb-hero {
+    min-height: 80vh;
+    background: linear-gradient(135deg, $color-primary 0%, #1a252f 100%);
+    color: $color-white !important; // Asegura texto blanco global
+    padding: ($base-padding * 4) 0;
+
+    &__title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: $color-white !important; 
+        margin-bottom: $base-padding * 1.5;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        color: rgba($color-white, 0.8) !important; 
+        margin-bottom: $base-padding * 2;
+    }
+
+    &__image-placeholder {
+        border: 2px dashed rgba($color-white, 0.3);
+        background-color: rgba($color-white, 0.1) !important; // Un gris más suave y armónico
+        transition: transform $transition-fast;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}

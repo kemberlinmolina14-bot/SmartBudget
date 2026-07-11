@@ -1,0 +1,14 @@
+// Mixin para Media Queries (Responsive)
+@mixin responder-en($pantalla) {
+    @if $pantalla ==movil {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $pantalla ==escritorio {
+        @media (min-width: 769px) {
+            @content;
+        }
+    }
+}

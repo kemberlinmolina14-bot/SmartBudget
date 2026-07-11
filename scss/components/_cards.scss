@@ -1,0 +1,30 @@
+.sb-card {
+    height: 100% !important; // Fuerza a la tarjeta a ocupar todo el alto disponible de la columna
+    background-color: $color-white;
+    border: 1px solid rgba($color-primary, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform $transition-fast, box-shadow $transition-fast;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    &__body {
+        padding: $base-padding * 2;
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $color-primary;
+        margin-bottom: $base-padding;
+    }
+
+    &__text {
+        font-size: 1rem;
+        color: #5a6c7d;
+        line-height: 1.6;
+    }
+}

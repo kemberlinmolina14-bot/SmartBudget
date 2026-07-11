@@ -1,0 +1,29 @@
+.sb-modal {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    &__header {
+        background-color: $color-primary; // Usamos la variable de SASS
+        color: $color-white;
+        border-bottom: none;
+        padding: $base-padding * 1.5;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    &__body {
+        background-color: $color-white;
+
+        .form-control {
+            &:focus {
+                border-color: $color-secondary;
+                box-shadow: 0 0 0 0.2rem rgba($color-secondary, 0.25);
+            }
+        }
+    }
+}

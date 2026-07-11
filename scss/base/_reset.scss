@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; // El padding y border no alteran el ancho total de la caja
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-main;
+    color: $color-dark;
+    line-height: 1.6;
+}
